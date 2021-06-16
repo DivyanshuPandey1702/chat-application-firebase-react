@@ -1,0 +1,81 @@
+.chat-msg-list {
+  height: 85%;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding: 1rem 1rem 0 1rem;
+
+  .message {
+    display: flex;
+    flex-direction: column;
+
+    div {
+      display: flex;
+      align-items: center;
+      img {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        margin-bottom: 0.5rem;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        p {
+          border-radius: 1rem;
+          padding: 1rem;
+          margin: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+.sent {
+  div {
+    flex-direction: row-reverse;
+  }
+  p {
+    background-color: #0f4c75;
+  }
+}
+
+.recieved {
+  p {
+    background-color: #3282b8;
+  }
+}
+
+.info-name {
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  font-size: 0.6rem;
+  color: rgba(100, 100, 100, 1);
+}
+
+.info-timestamp {
+  font-size: 0.6rem;
+  margin-left: 0.5rem;
+  color: rgba(100, 100, 100, 1);
+}
+
+::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 0.25rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 100, 100, 0.5);
+  border-radius: 0.25rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 100, 100, 0.8);
+}

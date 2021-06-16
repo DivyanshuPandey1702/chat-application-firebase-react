@@ -1,0 +1,81 @@
+$bgcolor: #bbe1fa;
+$textcolor: white;
+$fontsize: 16px;
+$appbgcolor: #1b262c;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: $fontsize;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: $bgcolor;
+  color: $textcolor;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+}
+
+.app {
+  background: $appbgcolor;
+  width: 60vw;
+  height: 80vh;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 20px 2px $appbgcolor;
+
+  .header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+
+    h1 {
+      font-weight: 700;
+      font-size: 2rem;
+    }
+
+    div {
+      display: flex;
+      img {
+        margin-left: 1rem;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        margin-bottom: 0.5rem;
+      }
+    }
+    button {
+      background: transparent;
+      border: none;
+      outline: none;
+      color: white;
+      font-weight: 700;
+      font-size: 0.9rem;
+      &:hover {
+        color: rgba(255, 255, 255, 0.5);
+      }
+      &:active {
+        color: rgba(255, 255, 255, 0.8);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .app {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+@import "./signin";
+@import "./chatroom";
+@import "./chatmessage";
