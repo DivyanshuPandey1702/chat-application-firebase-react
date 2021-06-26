@@ -23,12 +23,7 @@ import { useCollectionData } from "react-firebase-hooks/firestore";
 
 // Initialize Firebase App
 firebase.initializeApp({
-  apiKey: "AIzaSyDzyWp4RKTqBVtdhmQh-kLqadgcRSuWxxE",
-  authDomain: "chat-app-react-firebase-14e11.firebaseapp.com",
-  projectId: "chat-app-react-firebase-14e11",
-  storageBucket: "chat-app-react-firebase-14e11.appspot.com",
-  messagingSenderId: "19287169228",
-  appId: "1:19287169228:web:1d6d04a1b263ba72354a69",
+  //initialize app
 });
 
 // var for firebase auth and firestore
